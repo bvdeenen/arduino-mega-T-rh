@@ -1,3 +1,4 @@
+// vim:ts=4:tw=80:expandtab:syntax=c
 // HIH_6130_1  - Arduino
 // 
 // Arduino                HIH-6130
@@ -18,13 +19,13 @@
 #include <EEPROM.h>
 #include <SPI.h>
 
-String cikData = "bc89fb9db977b3e017dd7b675ffc362aa2f138d1";  // <-- FILL IN YOUR CIK HERE! (https://portals.exosite.com -> Add Device)
+String cikData = CIK1;  // <-- FILL IN YOUR CIK HERE! (https://portals.exosite.com -> Add Device)
 //byte macData[] = { 0x90, 0xA2, 0xDA, 0x00, 0xF4, 0xAA };
 byte macData[] = { 
   0x90, 0xA2, 0xDA, 0x0D, 0x35, 0x3C };
 
 // User defined variables for Exosite reporting period and averaging samples
-#define REPORT_TIMEOUT 5000 //milliseconds period for reporting to Exosite.com
+#define REPORT_TIMEOUT 60000 //milliseconds period for reporting to Exosite.com
 #define SENSOR_READ_TIMEOUT 1000 //milliseconds period for reading sensors in loop
 
 byte fetch_humidity_temperature(unsigned int *p_Humidity, unsigned int *p_Temperature);

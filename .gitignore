@@ -1,2 +1,11 @@
 temp_humidity.hex
 .lib/
+*.o
+*.obj
+*.elf
+
+# Libraries
+*.lib
+*.a
+
+*.hex
