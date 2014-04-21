@@ -9,3 +9,4 @@ temp_humidity.hex
 *.a
 
 *.hex
+.dep/
